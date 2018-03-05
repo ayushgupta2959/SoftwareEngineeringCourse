@@ -1,0 +1,83 @@
+Average sentence length user manual.
+
+Synopsis: 
+        java -jar AverageSentenceLength.jar [FILE] [OPTIONS]
+ 
+Description:
+        AverageSentenceLength calculates the average sentence length in a given
+        ASCII text file. The default length of words that will be included
+        towards the average is 3 characters, and the default delimiters used to
+        determine the end of a sentence are ".", "?", "!", ";", and ":". 
+        Both word length and delimiters can be set with the following flags:
+
+            -d, delimiter 
+            Specifies the delimiters to use to determine the end of a sentence.
+            Valid delimiters: . , ? ! : ; / | %
+
+            -l, word length
+            Specifies the minimum length of which words to count.
+
+Examples:
+        java -jar AverageSentenceLength.jar file.txt
+                Print average sentence length of file.txt.
+
+        java -jar AverageSentenceLength.jar file.txt -l 1
+                Print average sentence length of file.txt using words greater 
+                than or equal to 1 character.
+
+        java -jar AverageSentenceLength.jar file.txt -d .
+                Print average sentence length of file.txt using sentences 
+                delimited by ".". 
+
+        java -jar AverageSentenceLength.jar file.txt -l 2 -d . ?
+        
+                Print average sentence length of file.txt using sentences
+                delimited by ".","?" and including words greater than or equal
+                to 2 characters. 
+
+Requirements:
+        AverageSentenceLength requires JRE 1.6 or higher to operate. 
+        Visit www.java.com to install JRE.
+
+        AverageSentenceLength must be ran from a CLI(command line interpreter).
+        See Troubleshooting section for help determining your CLI.
+
+        AverageSentenceLength is compatible with text files.
+        See Troubleshooting section for help converting to the text format.
+
+Troubleshooting:
+        1. Determining your CLI.
+            Mac OS X: In Mac OS X the default CLI is terminal.app this can be
+            located by navigating to the Applications > Utility folder.
+
+            Windows 7, 8: In Windows the default CLI is Command Prompt. This
+            can be opened by following Start> Run > type cmd and hit enter.
+
+            Linux: Please refer to your distributions documentation to locate
+            the default CLI.
+
+        2. Converting to text format.
+            To convert a file to the the text format follow these steps:
+            Open a text editor > Enter the content to be converted > Save
+            the content with the .txt extension. You can now use this file with
+            AverageSentenceLength.
+        
+        3. Java Not Found
+            If java is not available as a command in the CLI, please refer to 
+            http://docs.oracle.com/javase/tutorial/essential/environment/paths.html
+            for specifics on how to enable java.
+            
+        4. File Not Found
+            AverageSentenceLength will throw a File Not Found error when the input file
+            is not found. Please verify the file exits at the location, by performing the
+            steps below.
+            
+            Windows 7, 8: Type dir [FILE] to verify if the file exists. 
+            
+            Mac OS X And Linux: Type ls -ltr [FILE] to veify the file exists and has read
+            privileges.
+            
+        5. File is not in .txt format
+        	If the source file that is to be read is not in .txt format AverageSentenceLength will throw
+        	File is not in .txt format error.To solve this issue check whether the source file is in .txt format or not
+        	and if not then convert it to text format using the method mentioned above.

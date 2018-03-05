@@ -1,0 +1,31 @@
+
+
+1. Introduction
+
+	We will be producing a command line Java application named "AverageSentenceLength" that will take a ASCII text file as input and will return/print  the average number of words per sentence within the input file. A flag of -d will allow the user to specify the punctuation of a sentence. The flag -l will allow the user to specify the minimum length of the words to be counted.
+			
+
+2. Process Description 
+
+	We will be implementing a waterfall-like process where we will produce the following deliverables.
+
+	# Process Document
+	The process document will outline our process, our team, our activities, and our roles. We will proceed onto the requirements document once our team reads the process document and approves it.
+
+	# Requirements Document
+	The requirements document outlines the behavior of the application, the users, the hardware, as well as usage specifications. The software will be implemented once the requirements document represents the information gathered from the Udacity interview and the team approves.
+
+	# Software
+	The application will be written using standard Java libraries. The code will be managed and organized using github branches specified by the coder. The code will then be reviewed, and once approved, merged to the master branch. This process will continue until the team has agreed that the code satisfies the requirements document.
+
+	# Application Manual
+	The application manual will be written by the documentation lead. The manual will contain description, usage with examples and troubleshooting information for the application. Once written the manual will be committed to the document branch to be reviewed by the team. Once approved, the branch will be merged to the master branch. 
+
+	# Validate Software
+	The software will be validated with a combination of pre-developed unit tests and tests developed by the QA manager.The team will collaborate with the QA manager to determine what functionality needs to be tested. Once the tests have been agreed on, the QA manger will develop the various tests, and ensure the software passes all the tests.   
+
+	# Post Deliverables
+	Once the software is validated it will be merged into the master branch of our git repository and we will submit the necessary documents via T-Square.  
+
+	# Changes to Requirements
+	If the need to change requirements come up we will post issues on github and discuss the issue. If a change is deemed necessary the requirements document will be updated, then the code and unit tests, then the manual, and finally the new version of the program is tested and verified.  
