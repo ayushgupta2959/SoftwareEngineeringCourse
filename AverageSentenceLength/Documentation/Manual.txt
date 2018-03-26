@@ -18,18 +18,18 @@ Description:
             Specifies the minimum length of which words to count.
 
 Examples:
-        java -jar AverageSentenceLength.jar file.txt
+        java src/UnannotedCode/Main.java file.txt
                 Print average sentence length of file.txt.
 
-        java -jar AverageSentenceLength.jar file.txt -l 1
+        java src/UnannotedCode/Main.java file.txt -l 1
                 Print average sentence length of file.txt using words greater 
                 than or equal to 1 character.
 
-        java -jar AverageSentenceLength.jar file.txt -d .
+        java src/UnannotedCode/Main.java file.txt -d .
                 Print average sentence length of file.txt using sentences 
                 delimited by ".". 
 
-        java -jar AverageSentenceLength.jar file.txt -l 2 -d . ?
+        java src/UnannotedCode/Main.java file.txt -l 2 -d . ?
         
                 Print average sentence length of file.txt using sentences
                 delimited by ".","?" and including words greater than or equal
