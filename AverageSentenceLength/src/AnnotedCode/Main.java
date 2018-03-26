@@ -7,8 +7,8 @@ public class Main {
 
 	public static void main(String @MinLen(1) [] args) {
 		@LTLengthOf("args") int i = 0;
-		String file = args [i++];
-		String wordLength = null;
+		@NonNull String file = args [i++];
+		@NonNull String wordLength = null;
 		HashSet<String> delimiters = new HashSet<>();
 		for(int j = 0;j<2;j++) {
 			if( i == args.length) {
