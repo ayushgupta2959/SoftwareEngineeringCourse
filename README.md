@@ -2,7 +2,7 @@
 This repository consist of the projects given in Software Engineering Course Udacity.
 
 1.AverageSentenceLength
-	This software has two versions Unannoted , Annoted. The difference is Annoted dir code is annoted using checkerframework and modified to avoid run time errors at compile time.
+	This software has two versions Unannoted , Annoted. The difference is Annoted dir code is annoted using checkerframework and modified to detect run time errors at compile time.
 
 	directory AverageSentenceLength/Test/ consist of examples for which this software has been tested.
 
